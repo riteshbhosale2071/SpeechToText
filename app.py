@@ -62,8 +62,7 @@ frame.pack(pady=10)
 tk.Entry(frame, textvariable=audio_path, width=50).pack(side=tk.LEFT, padx=5)
 tk.Button(frame, text="Browse", command=browse_audio).pack(side=tk.LEFT)
 
-tk.Button(root, text="Convert to Text", command=transcribe_audio,
-          bg="green", fg="white", font=("Arial", 12)).pack(pady=10)
+tk.Button(root, text="Convert to Text", command=transcribe_audio, bg="green", fg="white", font=("Arial", 12)).pack(pady=10)
 
 text_box = tk.Text(root, height=12, width=75)
 text_box.pack(pady=10)
